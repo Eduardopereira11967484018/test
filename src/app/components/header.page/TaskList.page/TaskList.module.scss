@@ -1,0 +1,155 @@
+// TaskList.module.scss
+.container {
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 272px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .taskList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  
+  .taskItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  
+  .checkbox {
+    margin-right: 12px;
+  }
+  
+  .taskTitle {
+    flex-grow: 1;
+  }
+  
+  .deleteButton {
+    background-color: #d30707;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .completedHeader {
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .completedList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .completedItem {
+    font-size: 16px;
+    color: green;
+  }
+  
+  .addTaskContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+  }
+  
+  .taskInput {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+  }
+  
+  .buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .addButton,
+  .cancelButton {
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+  }
+  
+  .addButton {
+    background-color: #53c0f0;
+    color: white;
+    border: none;
+  }
+  
+  .cancelButton {
+    background-color: #e7eefb;
+    color: #333;
+    border: none;
+  }
+  
+  .showAddTaskButton {
+    padding: 12px 24px;
+    background-color: #0796d3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  /* Modal de deletar tarefa */
+  .deleteModal {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 24px;
+    position: absolute;
+    width: 272px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .deleteModalHeader {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .modalButtons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .confirmDeleteButton {
+    background: linear-gradient(90deg, #D30707 0%, #F05353 68.65%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+  }
+  
+  .cancelDeleteButton {
+    background-color: #e7eefb;
+    color: #333;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+  }
+  
